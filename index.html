@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/abd03514af.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ANIMATION LINK -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Animation link -->
+    <div data-aos="fade-down"></div>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div>
+            <a href="">Suren</a>
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>
+            Hi,<br />
+            I'm <span>Suren</span><br />Web Designer
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ABOUT -->
+    <div id="About">
+      <div class="container">
+        <div class="row">
+          <div class="about-column-1">
+            <img src="image/s.jpg" />
+          </div>
+          <div class="about-column-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              minima nesciunt quos ducimus autem itaque, sapiente culpa, optio
+              nisi enim dolore ullam repellat quibusdam eligendi minus, ipsam
+              dolorem vitae sit.
+            </p>
+            <div class="titles">
+              <!--
+When using the `open()` function in the HTML `onclick` attribute, passing the event parameter allows you to access information about the event that triggered the function, helping you perform actions based on user interaction.
+-->
+
+              <p class="tab-links link" onclick="openTab(event, 'skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab(event, 'experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab(event, 'education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <!--
+The <span> element is used here to enclose the name "Suren" within the heading. It doesn't change the appearance on its own but can be styled separately using CSS or targeted for manipulation with JavaScript.
+-->
+
+                <li><span>UI/UX</span><br />Designing Web/App interface</li>
+                <li>
+                  <span>Web Development</span><br />Designing Web/App
+                  Development
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents tab" id="experience">
+              <ul>
+                <li><span>2021</span><br />Designing Web/App interface</li>
+                <li>
+                  <span>Web Development</span><br />Designing Web/App
+                  Development
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>BIT</span><br />Designing Web/App interface</li>
+                <li>
+                  <span>GRAPHIC Designer</span><br />Designing Web/App
+                  Development
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  servicess -->
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem veniam corrupti explicabo nesciunt in, dolor libero
+              atque? Eligendi distinctio, voluptates, doloremque et consectetur
+              tenetur sit laudantium, eius nulla quo numquam.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem veniam corrupti explicabo nesciunt in, dolor libero
+              atque? Eligendi distinctio, voluptates, doloremque et consectetur
+              tenetur sit laudantium, eius nulla quo numquam.
+            </p>
+            <!-- In HTML, "#" is often used in the href attribute of anchor tags (<a>) as a placeholder to indicate that the link doesn't currently lead anywhere. When "#" is used, clicking on the link typically doesn't navigate to a new page but rather scrolls to the top of the current page, effectively staying in the same location. -->
+
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem veniam corrupti explicabo nesciunt in, dolor libero
+              atque? Eligendi distinctio, voluptates, doloremque et consectetur
+              tenetur sit laudantium, eius nulla quo numquam.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------portfolio------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the people around the world. download it
+                from the play store
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the people around the world. download it
+                from the play store
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Online Shoping App</h3>
+              <p>
+                The app connects you to the people around the world. download it
+                from the play store
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- -------contact--------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>9818473029</p>
+            <!-- Grouping the social icons within spans for individual control --> 
+            <div class="social-icons">
+               <!-- Each icon is wrapped in a span for inline-block behavior -->
+              <span><a href="#"><i class="fab fa-facebook"></i></a></span>
+              <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+              <span><a href="#"><i class="fab fa-tiktok"></i></a></span>
+              <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="E-mail" placeholder="Your E-mail" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright@CHORIS KI KHAYIS BUJIS<i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+    
+    <script>
+      // Get all elements with class "tab-links" and "tab-contents"
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      // Define a function called openTab
+      function openTab(event, tabname) {
+        // Remove the "link" class from all elements with class "tab-links
+        for (tablink of tablinks) {
+          tablink.classList.remove("link");
+        }
+        // Remove the "tab" class from all elements with class "tab-contents"
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("tab");
+        }
+        // Add the "link" class to the clicked tab link
+        event.currentTarget.classList.add("link");
+        // Add the "tab" class to the corresponding tab content
+        document.getElementById(tabname).classList.add("tab");
+      }
+    </script>
+      <!-- animation link -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+</html>

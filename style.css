@@ -1,0 +1,386 @@
+/* Reset default margin, padding, font, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Set background color to white and text color to black for the body */
+body {
+  background: #ffffff;
+  color: black;
+}
+
+/* Header section styles */
+#header {
+  width: 100%;
+  height: 100vh;
+  /* Set background image, size, and position */
+  background-image: url(image/WhatsApp\ Image\ 2024-02-17\ at\ 18.18.57.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container styles */
+.container {
+  padding: 10px 10%;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+/* Styling for underline effect on hover */
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #35056f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+/* Generic link styles */
+a {
+  color: black;
+  text-decoration: none;
+  width: 140px;
+}
+
+/* Header text styles */
+.header-text {
+  font-size: 20px;
+  margin-top: 15%;
+}
+
+/* Styling for specific color in header text */
+.header-text h1 span {
+  color: #3e6ff4;
+}
+
+/* About section styles */
+#about {
+  padding: 80px 0;
+  color: #3e6ff4;
+}
+
+/* Row styles */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Column 1 in About section styles */
+.about-column-1 {
+  flex-basis: 35%;
+}
+
+.about-column-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Column 2 in About section styles */
+.about-column-2 {
+  flex-basis: 60%;
+}
+
+/* Sub-title styles */
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #3e6ff4;
+}
+
+/* Titles section styles */
+.titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+/* Tab links styles */
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Styling for underline effect on tab links */
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #3e6ff4;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.link::after {
+  width: 50%;
+}
+
+/* Tab contents styles */
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+/* Styling for specific color in tab contents */
+.tab-contents ul li span {
+  color: #3e6ff4;
+  font-size: 14px;
+}
+
+/* Hide tab contents by default */
+.tab-contents {
+  display: none;
+}
+
+/* Display active tab content */
+.tab-contents.tab {
+  display: block;
+}
+/* Styles for the service section */
+#service {
+  padding: 30px 0; /* Adds padding to the service section */
+}
+
+.service-list {
+  display: grid; /* Displays services in a grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Sets grid columns to adjust based on available space */
+  grid-gap: 40px; /* Adds gap between grid items */
+  margin-top: 50px; /* Adds margin on top of the service list */
+}
+
+.service-list div {
+  background: grey; /* Sets background color for service items */
+  padding: 40px; /* Adds padding around service items */
+  font-size: 13px; /* Sets font size for text in service items */
+  font-weight: 300; /* Sets font weight for text in service items */
+  border-radius: 10px; /* Sets border radius for rounded corners */
+  transition: background 0.5s, transform 0.5s; /* Adds transition effects for background and transform properties */
+}
+
+.service-list div i {
+  font-size: 50px; /* Sets font size for icons within service items */
+  margin-bottom: 30px; /* Adds margin at the bottom of icons within service items */
+}
+
+.service-list div h2 {
+  font-size: 30px; /* Sets font size for headings within service items */
+  font-weight: 500; /* Sets font weight for headings within service items */
+  margin-bottom: 15px; /* Adds margin at the bottom of headings within service items */
+}
+
+.service-list div a {
+  text-decoration: none; /* Removes underline decoration from links within service items */
+  color: #fff; /* Sets color for links within service items */
+  font-size: 12px; /* Sets font size for links within service items */
+  margin-top: 20px; /* Adds margin at the top of links within service items */
+  display: inline-block; /* Displays links as inline-block elements */
+}
+
+.service-list div:hover {
+  background: #3e6ff4; /* Changes background color of service items on hover */
+  transform: translateY(-10px); /* Moves service items up by 10 pixels on hover */
+}
+
+#service .sub-title {
+  text-align: center; /* Aligns sub-title text in the service section to the center */
+}
+
+/* Styles for the portfolio section */
+#portfolio {
+  padding: 50px 0; /* Adds padding above and below the portfolio section */
+}
+
+.work-list {
+  display: grid; /* Displays work items in a grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Sets grid columns to adjust based on available space */
+  grid-gap: 40px; /* Adds gap between grid items */
+  margin-top: 50px; /* Adds margin on top of the work list */
+}
+
+.work {
+  border-radius: 10px; /* Sets border radius for rounded corners of work items */
+  position: relative; /* Establishes a positioning context for absolute positioning within work items */
+  overflow: hidden; /* Hides overflow like images or text to maintain rounded corners */
+}
+
+.work img {
+  width: 100%; /* Makes images fill their containers */
+  border-radius: 10px; /* Sets border radius for rounded corners of images */
+  display: block; /* Displays images as block-level elements */
+  transition: transform 0.5s; /* Adds transition effect for image transformations */
+}
+
+.layer {
+  width: 100%; /* Makes the layer span the full width of its container */
+  height: 0; /* Initially hides the layer */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #3e6ff4); /* Sets background gradient for the layer */
+  border-radius: 10px; /* Sets border radius for rounded corners of the layer */
+  position: absolute; /* Positions the layer absolutely within its container */
+  left: 0; /* Positions the layer flush against the left edge of its container */
+  bottom: 0; /* Positions the layer flush against the bottom edge of its container */
+  overflow: hidden; /* Hides overflow content within the layer */
+  display: flex; /* Sets display mode to flex for the layer */
+  align-items: center; /* Aligns items in the layer vertically */
+  justify-content: center; /* Aligns items in the layer horizontally */
+  flex-direction: column; /* Sets the direction of the flex container to column */
+  padding: 0 40px; /* Adds padding to the layer */
+  text-align: center; /* Aligns text in the layer to the center */
+  font-size: 14px bold; /* Sets font size and weight for text in the layer (bold is invalid) */
+  transition: height 0.5s; /* Adds transition effect for height changes in the layer */
+}
+
+.layer h3 {
+  font-weight: 500; /* Sets font weight for headings within the layer */
+  margin-bottom: 20px; /* Adds margin at the bottom of headings within the layer */
+}
+
+.layer a {
+  margin-top: 20px; /* Adds margin at the top of links within the layer */
+  color: #3e6ff4; /* Sets color for links within the layer */
+  text-decoration: none; /* Removes underline decoration from links within the layer */
+  font-size: 20px; /* Sets font size for links within the layer */
+  line-height: 60px; /* Sets line height for links within the layer */
+  background: #fff; /* Sets background color for links within the layer */
+  width: 60px; /* Sets width for links within the layer */
+  height: 60px; /* Sets height for links within the layer */
+  border-radius: 50%; /* Sets border radius for rounded links within the layer */
+  text-align: center; /* Aligns text in links within the layer to the center */
+}
+
+.work:hover img {
+  transform: scale(1.1); /* Scales images on hover */
+}
+
+.work:hover .layer {
+  height: 100%; /* Expands the layer height on hover */
+}
+
+.btn {
+  display: block; /* Displays buttons as block-level elements */
+  margin: 50px auto; /* Centers buttons horizontally and adds margin above and below */
+  width: fit-content; /* Sets button width to fit its content */
+  border: 1px solid #3e6ff4; /* Sets border for buttons */
+  padding: 14px 50px; /* Adds padding to buttons */
+  border-radius: 6px; /* Sets border radius for rounded corners of buttons */
+  text-decoration: none; /* Removes underline decoration from buttons */
+  color: black; /* Sets text color for buttons */
+  transition: background 0.5s; /* Adds transition effect for background color changes in buttons */
+}
+
+.btn:hover {
+  background-color: #3e6ff4; /* Changes background color of buttons on hover */
+}
+
+#portfolio .sub-title {
+  text-align: center; /* Aligns sub-title text in the portfolio section to the center */
+}
+/* ----------contact----- */
+.contact-left{
+  flex-basis: 40%;
+  }
+  
+  .contact-right{
+    flex-basis: 60%;
+    }
+  .contact-left p{
+  margin-top: 30px;
+  }
+  .contact-left p i{
+    color: #3e6ff4;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  
+  
+  /* Adding margin space at the top */
+.social-icons {
+  margin-top: 30px;
+}
+
+/* Styling for the social media icons */
+.social-icons a {
+  text-decoration: none; /* Removing underline from the anchor tags */
+  font-size: 30px; /* Setting the size of the icons */
+  margin-right: 15px; /* Adding space between icons */
+  display: inline; /* Keeping the anchor tags inline for horizontal layout */
+}
+
+/* Changing the display property to inline-block for each span */
+.social-icons span {
+  display: inline-block; /* Allowing individual control and maintaining inline flow */
+  transition: transform 0.5s; /* Adding transition effect for smooth hover */
+}
+
+/* Applying transform on hover to create a lift effect */
+.social-icons span:hover {
+  transform: translateY(-5px); /* Moving the icons up slightly on hover */
+}
+
+  .btn.btn2{
+    display: inline-block;
+    background: #3e6ff4;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  form .btn2{
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .copyright{
+    text-align: center;
+    color: #3e6ff4;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+    background:#262626;
+  }
+  .copyright i{
+    color: red;
+  }
